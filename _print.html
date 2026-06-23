@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<style>
+  @page { size: Letter; margin: 15mm 18mm; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: "Helvetica Neue", Arial, sans-serif; color:#222; font-size:9.6pt; line-height:1.58; }
+  .accent { color:#4f46e5; }
+
+  /* header */
+  header { display:flex; justify-content:space-between; align-items:center; gap:22px; border-bottom:1.5px solid #1c1c1c; padding-bottom:15px; }
+  .name { font-size:25pt; font-weight:800; letter-spacing:-.5px; line-height:1.05; }
+  .title { font-size:9.6pt; color:#4f46e5; font-weight:700; margin-top:9px; text-transform:uppercase; letter-spacing:.6px; }
+  .contact { font-size:8.6pt; color:#666; margin-top:11px; letter-spacing:.2px; }
+  .contact span { white-space:nowrap; }
+  .photo { width:86px; height:86px; border-radius:50%; object-fit:cover; flex-shrink:0; }
+
+  section { margin-top:17px; }
+  h2 { font-size:9.4pt; text-transform:uppercase; letter-spacing:1.2px; color:#4f46e5; border-bottom:1px solid #e2e2e2; padding-bottom:5px; margin-bottom:12px; }
+
+  .obj { font-size:9.8pt; color:#3a3a3a; line-height:1.65; }
+
+  .job { margin-bottom:12px; }
+  .job:last-child { margin-bottom:0; }
+  .job-head { display:flex; justify-content:space-between; align-items:baseline; margin-bottom:3px; }
+  .job-title { font-weight:700; font-size:10pt; }
+  .job-org { color:#4f46e5; font-weight:600; font-size:9.2pt; }
+  .job-date { color:#888; font-size:8.4pt; white-space:nowrap; }
+  .job p { color:#444; line-height:1.55; }
+
+  .two { display:flex; gap:30px; }
+  .two > div { flex:1; }
+
+  .edu-item { margin-bottom:10px; }
+  .edu-item .d { color:#888; font-size:8.4pt; }
+  .edu-item .t { font-weight:700; margin-top:1px; }
+  .edu-item .o { color:#4f46e5; font-size:9pt; }
+
+  .skillrow { margin-bottom:11px; }
+  .skillrow b { display:block; font-size:8.8pt; margin-bottom:2px; }
+  .skillrow span { font-size:9pt; color:#444; line-height:1.5; }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <div class="name">Ernesto López Montáñez</div>
+    <div class="title">Ventas de Alto Valor · Inversiones · Desarrollo de Negocio</div>
+    <div class="contact">
+      <span>Tecate, B.C., México</span> &nbsp;·&nbsp;
+      <span>+52 665 110 0189</span> &nbsp;·&nbsp;
+      <span>jelo9306@gmail.com</span>
+    </div>
+  </div>
+  <img class="photo" src="ernesto.jpg" alt="Ernesto López Montáñez">
+</header>
+
+<section>
+  <h2>Objetivo profesional</h2>
+  <p class="obj">Integrarme a un entorno corporativo en una posición de ventas de alto valor, desarrollo de negocio o relaciones institucionales, aportando mi formación jurídica, mi experiencia gestionando inversiones y clientes de alto patrimonio, y mi liderazgo de equipos, para crecer dentro de la organización y contribuir de forma medible a sus objetivos.</p>
+</section>
+
+<section>
+  <h2>Experiencia profesional</h2>
+
+  <div class="job">
+    <div class="job-head">
+      <div><span class="job-title">Asesor de Inversiones Senior — Ventas de Alto Valor</span> · <span class="job-org">Smart Plus · Inversiones</span></div>
+      <div class="job-date">[2019] — Actualidad</div>
+    </div>
+    <p>Lideré la captación y fondeo de cuentas de inversión, gestionando y produciendo cerca de <strong>USD 1,000,000 mensuales</strong>. Atendí ventas de alto valor a clientes de alto patrimonio y administré portafolios de criptoactivos y renta variable. Como integrante del equipo regional de mayor desempeño, fui el principal generador de ventas, superando objetivos de forma consistente y sirviendo como referente del equipo en procesos comerciales y atención a clientes clave.</p>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <div><span class="job-title">Coordinador General de Campaña — Estrategia y Relaciones</span> · <span class="job-org">Campaña [Candidato]</span></div>
+      <div class="job-date">[2017 — 2019]</div>
+    </div>
+    <p>Dirigí la estrategia integral de una campaña que se consolidó como referente de la contienda, administrando presupuesto, agenda y equipos multidisciplinarios. Coordiné relaciones con actores clave, organicé eventos de gran convocatoria y lideré la comunicación y la movilización. Experiencia aplicable a relaciones institucionales, gestión de stakeholders y dirección de proyectos.</p>
+  </div>
+
+  <div class="job">
+    <div class="job-head">
+      <div><span class="job-title">Líder de Equipo y Vocero</span> · <span class="job-org">[Organización / Iniciativa]</span></div>
+      <div class="job-date">[2015 — 2017]</div>
+    </div>
+    <p>Lideré y coordiné grupos de trabajo numerosos, representando a la organización ante audiencias amplias. Desarrollé habilidades de comunicación, vocería y gestión de personas, alineando equipos hacia objetivos comunes.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Educación</h2>
+  <div class="two">
+    <div class="edu-item">
+      <div class="d">[2011 — 2016]</div>
+      <div class="t">Licenciatura en Derecho</div>
+      <div class="o">[Universidad] · Tecate, B.C.</div>
+    </div>
+    <div class="edu-item">
+      <div class="d">[Año]</div>
+      <div class="t">[Diplomado / Certificación]</div>
+      <div class="o">[Institución]</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Habilidades</h2>
+  <div class="two">
+    <div>
+      <div class="skillrow"><b>Ventas de Alto Valor & Inversiones</b><span>Captación y fondeo de cuentas · Clientes de alto patrimonio · Cripto y renta variable · Cierre de alto ticket</span></div>
+      <div class="skillrow"><b>Liderazgo & Relaciones Institucionales</b><span>Liderazgo de equipos · Gestión de stakeholders · Comunicación y vocería · Manejo de proyectos</span></div>
+    </div>
+    <div>
+      <div class="skillrow"><b>Jurídico & Negociación</b><span>Criterio jurídico · Negociación · Cumplimiento normativo · Redacción de documentos</span></div>
+      <div class="skillrow"><b>Herramientas & Idiomas</b><span>Office · CRM · Español (nativo) · Inglés (básico)</span></div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
