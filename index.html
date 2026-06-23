@@ -87,7 +87,7 @@
 }
 </script>
 </head>
-<body class="bg-white text-ink font-sans antialiased">
+<body class="bg-white text-ink font-sans antialiased overflow-x-hidden pb-24 sm:pb-0">
 
 <!-- NAV -->
 <nav class="sticky top-0 z-50 border-b border-line/70 bg-white/80 backdrop-blur-md">
@@ -102,19 +102,55 @@
       <a href="#experiencia" class="px-3 py-2 rounded-md text-subtle hover:text-ink hover:bg-zinc-100 transition">Experiencia</a>
       <a href="#habilidades" class="px-3 py-2 rounded-md text-subtle hover:text-ink hover:bg-zinc-100 transition">Habilidades</a>
       <a href="#valores" class="px-3 py-2 rounded-md text-subtle hover:text-ink hover:bg-zinc-100 transition">Valores</a>
-      <a href="#contacto" class="ml-1 px-4 py-2 rounded-md bg-accent text-white hover:bg-indigo-700 transition shine">Contacto</a>
+      <a href="#contacto" data-contact class="ml-1 px-4 py-2 rounded-md bg-accent text-white hover:bg-indigo-700 transition shine">Contacto</a>
     </div>
   </div>
 </nav>
 
-<!-- HERO -->
-<header class="relative overflow-hidden">
+<!-- MOBILE HERO (overlay) -->
+<header class="sm:hidden relative">
+  <img src="ernesto.jpg" alt="Ernesto López Montáñez" class="w-full aspect-[3/4] object-cover">
+  <div class="absolute inset-0 bg-gradient-to-t from-black via-black/55 to-black/5"></div>
+  <div class="absolute inset-x-0 bottom-0 px-6 pb-7 text-white">
+    <span class="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/10 px-3 py-1 text-xs font-medium backdrop-blur">
+      <span class="relative flex h-2 w-2">
+        <span class="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75"></span>
+        <span class="relative inline-flex h-2 w-2 rounded-full bg-green-500"></span>
+      </span>
+      Disponible para nuevas oportunidades
+    </span>
+    <h1 class="mt-4 text-4xl font-semibold tracking-tight leading-[1.04]">Ernesto<br><span class="text-indigo-300">López Montáñez</span></h1>
+    <p class="mt-3 text-sm leading-relaxed text-white/80">Ventas de Alto Valor · Inversiones · Desarrollo de Negocio. Baja California, México.</p>
+    <div class="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-xs font-bold text-indigo-300">
+      <span>#VentasDeAltoValor</span><span>#Inversiones</span><span>#Crypto</span><span>#Liderazgo</span>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE STATS -->
+<div class="sm:hidden grid grid-cols-3 divide-x divide-line border-b border-line">
+  <div class="px-2 py-5 text-center">
+    <div class="text-xl font-semibold tracking-tight">+8 años</div>
+    <div class="mt-0.5 text-[11px] leading-tight text-subtle">de trayectoria</div>
+  </div>
+  <div class="px-2 py-5 text-center">
+    <div class="text-xl font-semibold tracking-tight">#1</div>
+    <div class="mt-0.5 text-[11px] leading-tight text-subtle">Ventas en la región</div>
+  </div>
+  <div class="px-2 py-5 text-center">
+    <div class="text-xl font-semibold tracking-tight">Abogado</div>
+    <div class="mt-0.5 text-[11px] leading-tight text-subtle">Lic. en Derecho</div>
+  </div>
+</div>
+
+<!-- HERO (desktop / tablet) -->
+<header class="relative overflow-hidden hidden sm:block">
   <div class="absolute inset-0 grid-bg"></div>
   <!-- soft accent glow -->
   <div class="pointer-events-none absolute -top-24 right-0 h-[480px] w-[480px] rounded-full bg-accent/10 blur-3xl"></div>
 
-  <div class="relative mx-auto max-w-6xl px-6 pt-20 pb-24">
-    <div class="grid items-center gap-12 lg:grid-cols-[1.05fr_.95fr]">
+  <div class="relative mx-auto max-w-6xl px-6 pt-10 sm:pt-20 pb-16 sm:pb-24">
+    <div class="grid items-center gap-10 sm:gap-12 lg:grid-cols-[1.05fr_.95fr]">
 
       <!-- LEFT: text -->
       <div class="text-center lg:text-left">
@@ -142,17 +178,17 @@
           <span>#DesarrolloDeNegocio</span>
         </div>
 
-        <div class="animate-fade-up delay-3 mt-8 flex flex-wrap items-center justify-center lg:justify-start gap-3">
+        <div class="animate-fade-up delay-3 mt-8 hidden sm:flex flex-wrap items-center justify-center lg:justify-start gap-3">
           <a href="ernesto-lopez-cv.pdf" download class="shine rounded-lg bg-accent px-5 py-3 text-sm font-medium text-white shadow-sm hover:bg-indigo-700 transition">↓ Descargar CV</a>
-          <a href="#contacto" class="rounded-lg border border-accent/30 bg-white px-5 py-3 text-sm font-medium text-accent hover:bg-indigo-50 transition">Ponte en contacto</a>
+          <a href="#contacto" data-contact class="rounded-lg border border-accent/30 bg-white px-5 py-3 text-sm font-medium text-accent hover:bg-indigo-50 transition">Ponte en contacto</a>
           <a href="#experiencia" class="rounded-lg border border-line bg-white px-5 py-3 text-sm font-medium text-ink hover:bg-zinc-50 transition">Ver experiencia →</a>
         </div>
 
         <!-- quick stats -->
-        <div class="animate-fade-up delay-4 mt-10 flex justify-center lg:justify-start gap-8">
+        <div class="animate-fade-up delay-4 mt-10 flex flex-wrap justify-center lg:justify-start gap-x-6 gap-y-4 sm:gap-8">
           <div>
-            <div class="text-2xl font-semibold tracking-tight">7 cifras</div>
-            <div class="text-xs text-subtle">en volumen mensual gestionado</div>
+            <div class="text-2xl font-semibold tracking-tight">+8 años</div>
+            <div class="text-xs text-subtle">de trayectoria</div>
           </div>
           <div class="border-l border-line"></div>
           <div>
@@ -161,19 +197,19 @@
           </div>
           <div class="border-l border-line"></div>
           <div>
-            <div class="text-2xl font-semibold tracking-tight">Lic.</div>
-            <div class="text-xs text-subtle">en Derecho</div>
+            <div class="text-2xl font-semibold tracking-tight">Abogado</div>
+            <div class="text-xs text-subtle">Lic. en Derecho</div>
           </div>
         </div>
       </div>
 
       <!-- RIGHT: portrait -->
-      <div class="animate-fade-up delay-2 relative mx-auto w-full max-w-sm">
-        <!-- accent panel behind -->
-        <div class="absolute inset-0 translate-x-4 translate-y-4 rounded-3xl bg-accent/15"></div>
-        <div class="absolute inset-0 -translate-x-3 -translate-y-3 rounded-3xl border border-line"></div>
+      <div class="animate-fade-up delay-2 relative -mx-6 -mt-10 sm:mx-auto sm:mt-0 w-auto sm:w-full max-w-none sm:max-w-sm order-first lg:order-none">
+        <!-- accent panel behind (desktop only) -->
+        <div class="hidden sm:block absolute inset-0 translate-x-4 translate-y-4 rounded-3xl bg-accent/15"></div>
+        <div class="hidden sm:block absolute inset-0 -translate-x-3 -translate-y-3 rounded-3xl border border-line"></div>
         <!-- photo -->
-        <div class="relative overflow-hidden rounded-3xl ring-1 ring-line shadow-2xl">
+        <div class="relative overflow-hidden rounded-none sm:rounded-3xl ring-0 sm:ring-1 ring-line shadow-none sm:shadow-2xl">
           <img src="ernesto.jpg" alt="Ernesto López Montáñez"
                onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22500%22 height=%22600%22&gt;&lt;rect width=%22100%25%22 height=%22100%25%22 fill=%22%230a0a0a%22/&gt;&lt;text x=%2250%25%22 y=%2250%25%22 fill=%22white%22 font-size=%22120%22 font-family=%22sans-serif%22 text-anchor=%22middle%22 dominant-baseline=%22central%22&gt;EL&lt;/text&gt;&lt;/svg&gt;'"
                class="aspect-[4/5] w-full object-cover">
@@ -183,8 +219,8 @@
             <div class="text-white/70 text-sm">Ventas de Alto Valor · Tecate, B.C.</div>
           </div>
         </div>
-        <!-- floating badge -->
-        <div class="absolute bottom-20 -right-4 rounded-xl border border-line bg-white px-4 py-2.5 shadow-lg">
+        <!-- floating badge (desktop only) -->
+        <div class="hidden sm:block absolute bottom-20 -right-4 rounded-xl border border-line bg-white px-4 py-2.5 shadow-lg">
           <div class="text-[11px] uppercase tracking-wider text-subtle">Enfoque</div>
           <div class="text-sm font-semibold">Crecimiento & Resultados</div>
         </div>
@@ -197,7 +233,7 @@
 <main class="mx-auto max-w-5xl px-6">
 
   <!-- OBJETIVO PROFESIONAL -->
-  <section id="objetivo" class="py-24 sm:py-28">
+  <section id="objetivo" class="py-16 sm:py-28">
     <div class="max-w-3xl border-l-2 border-accent pl-7 sm:pl-9">
       <span class="text-xs font-semibold uppercase tracking-[0.2em] text-accent">Objetivo profesional</span>
       <p class="mt-6 text-xl sm:text-2xl font-medium leading-[1.55] tracking-tight text-zinc-600">
@@ -207,8 +243,8 @@
   </section>
 
   <!-- SOBRE MÍ -->
-  <section id="sobre" class="py-20 border-t border-line">
-    <div class="grid sm:grid-cols-3 gap-10">
+  <section id="sobre" class="py-14 sm:py-20 border-t border-line">
+    <div class="grid sm:grid-cols-3 gap-3 sm:gap-10">
       <div>
         <span class="text-xs font-semibold uppercase tracking-widest text-accent">01 — Perfil</span>
         <h2 class="mt-3 text-2xl font-semibold tracking-tight">Sobre mí</h2>
@@ -220,7 +256,7 @@
   </section>
 
   <!-- EXPERIENCIA -->
-  <section id="experiencia" class="py-20 border-t border-line">
+  <section id="experiencia" class="py-14 sm:py-20 border-t border-line">
     <span class="text-xs font-semibold uppercase tracking-widest text-accent">02 — Trayectoria</span>
     <h2 class="mt-3 text-2xl font-semibold tracking-tight mb-10">Experiencia</h2>
 
@@ -273,7 +309,7 @@
   </section>
 
   <!-- EDUCACIÓN -->
-  <section id="educacion" class="py-20 border-t border-line">
+  <section id="educacion" class="py-14 sm:py-20 border-t border-line">
     <span class="text-xs font-semibold uppercase tracking-widest text-accent">03 — Formación</span>
     <h2 class="mt-3 text-2xl font-semibold tracking-tight mb-10">Educación</h2>
     <article class="rounded-xl border border-line bg-white p-6 max-w-xl">
@@ -285,7 +321,7 @@
   </section>
 
   <!-- HABILIDADES (bento) -->
-  <section id="habilidades" class="py-20 border-t border-line">
+  <section id="habilidades" class="py-14 sm:py-20 border-t border-line">
     <span class="text-xs font-semibold uppercase tracking-widest text-accent">04 — Capacidades</span>
     <h2 class="mt-3 text-2xl font-semibold tracking-tight mb-10">Habilidades</h2>
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -329,7 +365,7 @@
   </section>
 
   <!-- VALORES -->
-  <section id="valores" class="py-20 border-t border-line">
+  <section id="valores" class="py-14 sm:py-20 border-t border-line">
     <span class="text-xs font-semibold uppercase tracking-widest text-accent">05 — Principios</span>
     <h2 class="mt-3 text-2xl font-semibold tracking-tight mb-10">Valores</h2>
     <div class="grid sm:grid-cols-2 gap-x-12 gap-y-8">
@@ -353,7 +389,7 @@
   </section>
 
   <!-- TESTIMONIOS -->
-  <section id="testimonios" class="py-20 border-t border-line">
+  <section id="testimonios" class="py-14 sm:py-20 border-t border-line">
     <span class="text-xs font-semibold uppercase tracking-widest text-accent">06 — Reconocimientos</span>
     <h2 class="mt-3 text-2xl font-semibold tracking-tight mb-10">Lo que dicen de Ernesto</h2>
     <div class="grid sm:grid-cols-2 gap-5">
@@ -377,28 +413,15 @@
   </section>
 
   <!-- CONTACTO -->
-  <section id="contacto" class="py-20 border-t border-line">
+  <section id="contacto" class="py-14 sm:py-20 border-t border-line">
     <div class="rounded-2xl border border-line bg-zinc-50 p-10 text-center">
       <span class="text-xs font-semibold uppercase tracking-widest text-accent">07 — Contacto</span>
       <h2 class="mt-3 text-3xl font-semibold tracking-tight">¿Hablamos?</h2>
-      <p class="mx-auto mt-3 max-w-md text-subtle">Estaré encantado de conectar. Aquí tienes mis datos.</p>
-      <div class="mt-8 grid sm:grid-cols-3 gap-3 max-w-2xl mx-auto text-left">
-        <a href="mailto:jelo9306@gmail.com" class="rounded-xl border border-line bg-white p-4 hover:border-accent transition">
-          <div class="text-xs uppercase tracking-wider text-subtle">Email</div>
-          <div class="font-medium break-all">jelo9306@gmail.com</div>
-        </a>
-        <a href="tel:+526651100189" class="rounded-xl border border-line bg-white p-4 hover:border-accent transition">
-          <div class="text-xs uppercase tracking-wider text-subtle">Teléfono</div>
-          <div class="font-medium">+52 665 110 0189</div>
-        </a>
-        <a href="#" class="rounded-xl border border-line bg-white p-4 hover:border-accent transition">
-          <div class="text-xs uppercase tracking-wider text-subtle">Ubicación</div>
-          <div class="font-medium">Tecate, B.C., México</div>
-        </a>
+      <p class="mx-auto mt-3 max-w-md text-subtle">Estaré encantado de conectar.</p>
+      <div class="mt-7 flex flex-wrap items-center justify-center gap-3">
+        <button data-contact class="shine rounded-lg bg-accent px-5 py-3 text-sm font-medium text-white hover:bg-indigo-700 transition">Ver datos de contacto</button>
+        <a href="ernesto-lopez-cv.pdf" download class="rounded-lg border border-line bg-white px-5 py-3 text-sm font-medium text-ink hover:bg-zinc-50 transition">↓ Descargar CV</a>
       </div>
-      <a href="ernesto-lopez-cv.pdf" download class="shine mt-6 inline-flex items-center gap-2 rounded-lg bg-ink px-5 py-3 text-sm font-medium text-white hover:bg-accent transition">
-        ↓ Descargar CV en PDF
-      </a>
     </div>
   </section>
 </main>
@@ -407,6 +430,49 @@
   © <span id="year"></span> Ernesto López Montáñez · Currículum
 </footer>
 
-<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+<!-- Mobile bottom action bar -->
+<div class="sm:hidden fixed bottom-0 inset-x-0 z-50 border-t border-line bg-white/95 backdrop-blur px-4 py-3 flex gap-3 shadow-[0_-4px_20px_-8px_rgba(0,0,0,0.15)]">
+  <a href="ernesto-lopez-cv.pdf" download class="flex-1 text-center rounded-lg bg-accent px-4 py-3 text-sm font-semibold text-white">↓ Descargar CV</a>
+  <button data-contact class="flex-1 text-center rounded-lg border border-accent/40 px-4 py-3 text-sm font-semibold text-accent">Contacto</button>
+</div>
+
+<!-- Contact modal -->
+<div id="contactModal" style="display:none" class="fixed inset-0 z-[60] items-center justify-center p-4">
+  <div data-contact-close class="absolute inset-0 bg-black/50 backdrop-blur-sm"></div>
+  <div class="relative w-full max-w-sm rounded-2xl border border-line bg-white p-6 shadow-2xl">
+    <button data-contact-close aria-label="Cerrar" class="absolute right-4 top-3 text-2xl leading-none text-subtle hover:text-ink">&times;</button>
+    <h3 class="text-lg font-semibold tracking-tight">Contacto</h3>
+    <p class="mt-1 text-sm text-subtle">Ernesto López Montáñez</p>
+    <div class="mt-5 space-y-3">
+      <a href="mailto:jelo9306@gmail.com" class="block rounded-xl border border-line p-3 hover:border-accent transition">
+        <div class="text-xs uppercase tracking-wider text-subtle">Email</div>
+        <div class="font-medium break-all">jelo9306@gmail.com</div>
+      </a>
+      <a href="tel:+526651100189" class="block rounded-xl border border-line p-3 hover:border-accent transition">
+        <div class="text-xs uppercase tracking-wider text-subtle">Teléfono</div>
+        <div class="font-medium">+52 665 110 0189</div>
+      </a>
+      <div class="rounded-xl border border-line p-3">
+        <div class="text-xs uppercase tracking-wider text-subtle">Ubicación</div>
+        <div class="font-medium">Tecate, B.C., México</div>
+      </div>
+    </div>
+    <a href="ernesto-lopez-cv.pdf" download class="mt-5 block rounded-lg bg-accent px-4 py-3 text-center text-sm font-semibold text-white hover:bg-indigo-700 transition">↓ Descargar CV</a>
+  </div>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  (function(){
+    var modal = document.getElementById('contactModal');
+    function open(){ modal.style.display='flex'; document.body.style.overflow='hidden'; }
+    function close(){ modal.style.display='none'; document.body.style.overflow=''; }
+    document.addEventListener('click', function(e){
+      if (e.target.closest('[data-contact]')) { e.preventDefault(); open(); }
+      else if (e.target.closest('[data-contact-close]')) { close(); }
+    });
+    document.addEventListener('keydown', function(e){ if (e.key === 'Escape') close(); });
+  })();
+</script>
 </body>
 </html>
