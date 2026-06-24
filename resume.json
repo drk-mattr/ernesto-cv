@@ -1,0 +1,77 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Ernesto López Montáñez",
+    "label": "Ventas de Alto Valor · Asesoría de Inversiones · Desarrollo de Negocio",
+    "email": "jelo9306@gmail.com",
+    "phone": "+52 665 110 0189",
+    "url": "https://ernesto-cv.pages.dev/",
+    "summary": "Profesional orientado a resultados con formación en Derecho (Licenciatura, UABC) y experiencia en ventas de alto valor y asesoría de inversiones. He liderado la captación y fondeo de cuentas de inversión, atendiendo a clientes de alto patrimonio en portafolios de criptoactivos y renta variable. Cofundador de un despacho jurídico y coordinador general de una campaña política de gran alcance. Busco integrarme a un entorno corporativo en ventas de alto valor, desarrollo de negocio o relaciones institucionales, aportando criterio jurídico, liderazgo de equipos y enfoque en resultados.",
+    "location": {
+      "city": "Tecate",
+      "region": "Baja California",
+      "countryCode": "MX"
+    },
+    "profiles": []
+  },
+  "work": [
+    {
+      "name": "Smart Plus · Inversiones",
+      "position": "Asesor de Inversiones Senior — Ventas de Alto Valor",
+      "location": "Tecate, Baja California, México",
+      "startDate": "2024-01",
+      "summary": "Asesoría de inversiones y ventas de alto valor para clientes de alto patrimonio.",
+      "highlights": [
+        "Lideré la captación y el fondeo de cuentas de inversión, gestionando portafolios de alto valor de forma mensual.",
+        "Atendí ventas de alto valor a clientes de alto patrimonio en criptoactivos y renta variable (acciones).",
+        "Principal generador de ventas e integrante del equipo regional de mayor desempeño; superé objetivos de forma consistente.",
+        "Referente del equipo en procesos comerciales, capacitación de pares y atención a clientes clave."
+      ]
+    },
+    {
+      "name": "Campaña Alfredo Ferreiro",
+      "position": "Coordinador General de Campaña y Vocero",
+      "location": "Tecate, Baja California, México",
+      "startDate": "2022-01",
+      "endDate": "2024-01",
+      "summary": "Dirección integral de campaña política y vocería.",
+      "highlights": [
+        "Dirigí la estrategia integral de la campaña, administrando presupuesto, agenda y equipos multidisciplinarios.",
+        "Coordiné relaciones con actores clave (stakeholders), organicé eventos de gran convocatoria y lideré la comunicación.",
+        "Representé a la campaña como vocero ante audiencias amplias, con gestión de personas y comunicación persuasiva."
+      ]
+    },
+    {
+      "name": "Valores Corporativo (despacho jurídico)",
+      "position": "Cofundador y Director",
+      "location": "Tecate, Baja California, México",
+      "startDate": "2017-01",
+      "endDate": "2022-01",
+      "summary": "Fundación y dirección de un despacho jurídico al servicio de la comunidad.",
+      "highlights": [
+        "Fundé y dirigí un despacho jurídico al servicio de la comunidad, brindando asesoría legal a numerosas personas.",
+        "Construí la operación desde cero y la escalé hasta abrir un despacho paralelo de terapia psicológica.",
+        "Responsabilidad integral: emprendimiento, dirección, desarrollo de negocio y gestión de clientes."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidad Autónoma de Baja California (UABC)",
+      "area": "Derecho",
+      "studyType": "Licenciatura",
+      "startDate": "2011-01",
+      "endDate": "2016-01"
+    }
+  ],
+  "skills": [
+    { "name": "Ventas e Inversiones", "keywords": ["Ventas de alto valor", "Asesoría de inversiones", "Captación y fondeo de cuentas", "Clientes de alto patrimonio", "Criptoactivos", "Renta variable", "Cierre de alto ticket"] },
+    { "name": "Negocio y Liderazgo", "keywords": ["Desarrollo de negocio", "Relaciones institucionales", "Gestión de stakeholders", "Liderazgo de equipos", "Gestión comercial", "Manejo de proyectos"] },
+    { "name": "Jurídico", "keywords": ["Derecho", "Asesoría jurídica", "Negociación", "Cumplimiento normativo", "Redacción de documentos"] },
+    { "name": "Herramientas", "keywords": ["CRM", "Microsoft Office"] }
+  ],
+  "languages": [
+    { "language": "Español", "fluency": "Nativo" },
+    { "language": "Inglés", "fluency": "Básico" }
+  ]
+}
